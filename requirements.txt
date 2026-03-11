@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+motor
+passlib[bcrypt]
+open-webui
+python-dotenv
