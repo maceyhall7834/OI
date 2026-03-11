@@ -1,9 +1,17 @@
-[
-  {
-    "id": "openai",
-    "name": "OpenAI",
-    "base_url": "https://api.openai.com/v1",
-    "token_env": "OPENAI_KEY",
-    "extra": { "model": "gpt-4o-mini" }
+{
+"id": "openai_hf_router",
+"name": "OpenAI (via HF Router)",
+"base_url": "https://router.huggingface.co/v1",
+"token_env": "HUGGINGFACE_KEY",
+"extra": {
+"provider_type": "OpenAI",
+"api_type": "chat_completions",
+"auth_scheme": "Bearer",
+"model_ids": [],
+"include_all_models_from_endpoint": true,
+"models_endpoint": "https://router.huggingface.co/v1/models",
+"headers": {},
+"prefix_id": "",
+"tags": []
   }
-]
+}
